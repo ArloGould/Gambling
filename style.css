@@ -1,103 +1,22 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
 body {
-  background-image: url(gambig-background.png);
-  background-size: cover;
+  background-color: rgb(2, 79, 2);
 }
-
-.header {
-  display: flex;
-  width: 96%;
-  justify-content: space-evenly;
-  color: white;
-  background-color: black;
-
-  padding-inline: 1%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-inline: 1%;
-
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-}
-
-.scoreBoard-js {
-  width: auto;
-  font-size: 50px;
-  color: white;
-}
-
-.money {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.playerCard, .dealerCard {
+.playerCardDec, 
+.dealerCardDec {
   display: inline-block;
-  margin-inline: 30px;
 }
-
-.name {
-  width: 150px;
-  margin-top: 5px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 20px;
-}
-
-.playerCardDec, .dealerCardDec {
+.playerCard,
+.dealerCard {
   display: inline-block;
-  color: white;
 }
-
 .Card {
   width: 100px;
   border-radius: 10px;
 }
 
-button {
-  width: auto;
-  font-size: 30px;
-  padding: 5px;
-  margin: 10px;
-	
-	border-style: solid;
-	border-width: 3px;
-	background-color: rgb(199, 2, 2);
-	border-color: gold;
-	color: white;
-	border-radius: 10px;
-}
-
-.buttons {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.buttonStart, .buttonReset {
-	font-size: 40px;
-}
-
-.start-btns, .gamble-btns, .guess-btns {
-  display: flex;
-  flex-direction: row;
-	justify-content: center;
-}
-
 .hide {
   display: none;
-}
-
+};
 .gameButton {
   color: rgb(255, 0, 0);
   padding: 10px;
