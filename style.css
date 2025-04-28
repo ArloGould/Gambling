@@ -1,3 +1,5 @@
+/* General css (on multiple pages) */
+
 * {
   margin: 0%;
   padding: 0%;
@@ -8,6 +10,7 @@ body {
   background-size: cover;
 }
 
+/* header / banner for multiple pages */
 .header {
   display: flex;
   width: 96%;
@@ -31,43 +34,22 @@ body {
   color: white;
 }
 
+.name {
+  width: 150px;
+  margin-top: 5px;
+}
+
 .money {
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+/* header / banner stuff end */
 
 .playerCard, .dealerCard {
   display: inline-block;
   margin-inline: 30px;
-}
-
-.blackjack-cards{
-  display: inline-block;
-  margin-inline: 30px;
-}
-
-.card-labels{
-  margin-left: 20px;
-  color: white !important;
-}
-
-.name {
-  width: 150px;
-  margin-top: 5px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  
-  margin-top: 20px;
-}
-
-.playerCardDec, .dealerCardDec {
-  display: inline-block;
-  color: white;
 }
 
 .Card {
@@ -90,6 +72,44 @@ button, .gameOpts {
 	border-radius: 10px;
 }
 
+.hide {
+  display: none;
+}
+
+/* General css end */
+
+/* Blackjack css */
+
+.blackjack-cards{
+  display: inline-block;
+  margin-inline: 30px;
+}
+
+.card-labels{
+  margin-left: 20px;
+  color: white !important;
+}
+
+.win-js, .lose-js{
+  color: white !important;
+}
+
+/* Blackjack css end */
+
+/* Highlow css */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 20px;
+}
+
+.playerCardDec, .dealerCardDec {
+  display: inline-block;
+  color: white;
+}
+
 .buttons {
   margin-top: 20px;
   width: 100%;
@@ -105,15 +125,9 @@ button, .gameOpts {
 	justify-content: center;
 }
 
-.hide {
-  display: none;
-}
+/* Highlow css end */
 
-.win-js, .lose-js{
-  color: white !important;
-}
-
-/* Main menu CSS */
+/* Main menu css */
 
 .gameOpts {
   color: rgb(255, 0, 0);
@@ -129,26 +143,34 @@ a {
   display: block;
   padding: 10px;
 }
+
 img {
   border-radius: 10px 10px 0px 0px;
   width:300px;
   margin: 0;
   height: 200px;
 }
+
 .gameGrid {
   margin-top: 30px ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   column-gap: 20px;
   row-gap: 40px;
- 
 }
+
 .title {
   padding: 10px;
 }
+
 .gameLink {
   padding: 0%;
 }
+
+/* Main menu css end */
+
+/* Slots css */
+
 .slot {
   background-color: rgb(49, 46, 46);
   border-radius: 10px;
@@ -161,6 +183,7 @@ img {
   text-align: center;
   vertical-align: middle;
 }
+
 .containerSlots {
   display: flex;
   flex-direction: row;
@@ -169,6 +192,10 @@ img {
   height: 100px;
   margin-top: 100px;
 }
+
+/* Slows css end */
+
+/* idk where this is used */
 .homebutton {
   background-color: rgb(49, 46, 46);
   border-radius: 10px;
