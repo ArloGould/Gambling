@@ -50,6 +50,7 @@ body {
 
 .card-labels{
   margin-left: 20px;
+  color: white !important;
 }
 
 .name {
