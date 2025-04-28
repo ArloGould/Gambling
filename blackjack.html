@@ -8,44 +8,58 @@
 </head>
 <body>
   <button><a href="index.html">Home</a></button>
-<div class="header">
-  <h1>Blackjack</h1>
-  <div class="scoreBoard-js">
-    $100
+
+  <div class="header">
+    <h1>Blackjack</h1>
+    <div class="scoreBoard-js">
+      $100
+    </div>
   </div>
-</div>
-<div class="playerCard">
-<div>Dealers Cards</div>
-<div class="playerCard dealerCards-js">
-  <img class="Card" src="blankCard.png">
-  <img class="Card" src="blankCard.png">
-</div>
-<div>Your Cards</div>
-<div class="playerCard playerCards-js">
-  <img class="Card" src="blankCard.png">
-  <img class="Card" src="blankCard.png">
-</div>
-</div>
-<div class="hide betOpts">
-  <button onclick="gamble(10); playBJ()">$10</button>
-  <button onclick="gamble(20); playBJ()">$20</button>
-  <button onclick="gamble(30); playBJ()">$30</button>
-  <button onclick="gamble(40); playBJ()">$40</button>
-  <button onclick="gamble(50); playBJ()">$50</button>
-  <button onclick="gamble(points); playBJ()">All in</button>
-</div>
-<div class="win-js hide winopt">
-  <h1>You Win!</h1>
-</div>
-<button class="resetBJ hide" onclick="resetBJ();">Reset</button>
-<div class="lose-js hide winopt">
-  <h1>You Lose!</h1>
-</div>
-<div class="hide playOpts">
-  <button onclick="hit('player1')">Hit</button>
-  <button onclick="stand('player1')">Stand</button>
-</div>
-<button class="dealBJButton-js" onclick="dealBJ()">Deal</button>
-<script src="script.js"></script>
+
+  <div class="blackjack-cards">
+
+    <h1 class="card-labels">Dealers Cards</h1>
+    <div class="playerCard dealerCards-js">
+      <img class="Card" src="blankCard.png">
+      <img class="Card" src="blankCard.png">
+    </div>
+
+    <h1 class="card-labels">Your Cards</h1>
+    <div class="playerCard playerCards-js">
+      <img class="Card" src="blankCard.png">
+      <img class="Card" src="blankCard.png">
+    </div>
+
+  </div>
+
+  <div class="hide betOpts">
+
+    <button onclick="gamble(10); playBJ()">$10</button>
+    <button onclick="gamble(20); playBJ()">$20</button>
+    <button onclick="gamble(30); playBJ()">$30</button>
+    <button onclick="gamble(40); playBJ()">$40</button>
+    <button onclick="gamble(50); playBJ()">$50</button>
+    <button onclick="gamble(points); playBJ()">All in</button>
+  
+  </div>
+
+  <div class="win-js hide winopt">
+    <h1>You Win!</h1>
+  </div>
+
+  <button class="resetBJ hide" onclick="resetBJ();">Reset</button>
+  
+  <div class="lose-js hide winopt">
+    <h1>You Lose!</h1>
+  </div>
+
+  <div class="hide playOpts">
+    <button onclick="hit('player1')">Hit</button>
+    <button onclick="stand('player1')">Stand</button>
+  </div>
+
+  <button class="dealBJButton-js" onclick="dealBJ()">Deal</button>
+  
+  <script src="script.js"></script>
 </body>
 </html>

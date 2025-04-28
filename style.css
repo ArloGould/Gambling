@@ -43,6 +43,15 @@ body {
   margin-inline: 30px;
 }
 
+.blackjack-cards{
+  display: inline-block;
+  margin-inline: 30px;
+}
+
+.card-labels{
+  margin-left: 20px;
+}
+
 .name {
   width: 150px;
   margin-top: 5px;
