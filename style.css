@@ -99,12 +99,19 @@ button, .gameOpts {
   display: none;
 }
 
+.win-js, .lose-js{
+  color: white !important;
+}
+
+/* Main menu CSS */
+
 .gameOpts {
   color: rgb(255, 0, 0);
   padding: 0px 0px 0px 0px;
   display: block;
   width: 300px;
 }
+
 a {
   text-decoration: none;
   color:rgb(255, 0, 0);
