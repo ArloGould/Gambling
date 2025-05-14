@@ -5,6 +5,7 @@
   <meta name="viewport" content="width", initial-scale=1.0">
   <title>High Low</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="TGPLogo copy.png">
 </head>
 <body>
 
@@ -49,13 +50,12 @@
   <div class="buttons">
 
     <!-- start/reset buttons -->
-    <div class="start-btns">
-      <button class="buttonStart" onclick="pickCard(`player1`); hideElement(`buttonStart`);">Start</button>
-      <button onclick="reset()" class="buttonReset">Reset</button>
+    <div class="start-btns-js start-btns">
+      <button class="buttonStart" onclick="pickCard(`player1`); hideElement(`buttonStart`); showElement('gamble-btns'); showElement('guess-btns')">Start</button>
     </div>
-
+    <div class="reset-btn-js start-btns hide"><button onclick="reset()" class="buttonReset">Reset</button></div>
     <!-- buttons for how much to gamble -->
-    <div class="gamble-btns">
+    <div class="gamble-btns hide">
       <button onclick="gamble(10)">$10</button>
       <button onclick="gamble(20)">$20</button>
       <button onclick="gamble(30)">$30</button>
@@ -65,11 +65,11 @@
     </div>
 
     <!-- guess high/low -->
-    <div class="guess-btns">
+    <div class="guess-btns hide">
       <button class="guessButton-js" onclick="guess('higher')">Higher &uarr;</button>
       <button class="guessButton-js" onclick="guess('lower')">Lower &darr;</button>
     </div>
-
+    
   </div>
 
   <script src="script.js"></script>
